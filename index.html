@@ -4,19 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Vladilen Minin Clicker Game</title>
 </head>
 <body>
   
   <div class="container effects">
-    <h1 class="title">Время игры: <span id="timeSpan">10</span></h1>
+    <h1 class="title"> <i class="fas fa-stopwatch"></i> Время игры: <span id="timeSpan">3</span></h1>
+    <h2 class="score hide"></h2>
     <div class="board effects">
-      <button class="btn effects">Start</button>
+      <button class="btn effects">Start <i class="fas fa-play"></i></button>
     </div>
     <span class="span-time">Время игры, (сек)</span>
-    <input class="input-number effects" type="number" min="0" value="10">
+    <input class="input-number effects" type="number" min="0" value="2">
   </div>
+
 
   <script src="script.js"></script>
 </body>

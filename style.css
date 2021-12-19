@@ -36,6 +36,10 @@ body {
 
   background: rgb(65,58,181);
   background: linear-gradient(0deg, rgba(65,58,181,1) 0%, rgba(164,43,150,1) 50%, rgba(175,13,13,1) 100%);
+
+  background: url('https://www.iconpacks.net/icons/2/free-click-icon-2384-thumb.png');
+  background-size: 50px;
+  background-position: center center;
 }
 
 button, input{
@@ -53,7 +57,7 @@ button, input{
   align-items: center;
 }
 
-.title {
+.title, .score{
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -64,13 +68,15 @@ button, input{
   min-height: 480px;
   max-width: 620px;
   width: 100%;
-  background: #2232;
+  background: #333;
 
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  position: relative;
+  opacity: 0.9;
 
+}
 
 .btn {
   padding: 16px 32px;
@@ -81,6 +87,8 @@ button, input{
   background: rgb(39, 93, 163);
   letter-spacing: 2px;
   color: #fff;
+
+  transition: all .25s ease;
 }
 
 .effects {
@@ -90,16 +98,27 @@ button, input{
 }
 
 .span-time {
-  margin-top: 4rem;
+  margin-top: 3rem;
   display: inline-block;
   font-size: 1.8rem;
 }
 
 .input-number {
-  padding: 10px;
+  padding: 15px;
   margin-top: 2rem;
   font-size: 18px;
   border-radius: 4px;
+
+  width: 100px;
+}
+
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 @media(hover: hover ) {
